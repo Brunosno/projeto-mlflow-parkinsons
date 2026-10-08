@@ -47,7 +47,7 @@ Siga o passo a passo abaixo para reproduzir os experimentos na sua máquina:
 
 **1. Clone o repositório e acesse a pasta:**
 ```bash
-git clone [URL_DO_SEU_REPOSITORIO]
+git clone https://github.com/Brunosno/projeto-mlflow-parkinsons.git
 cd projeto-mlflow-parkinsons
 ```
 
@@ -67,7 +67,10 @@ pip install -r requirements.txt
 ```
 
 **4. Dataset:**
-O arquivo de dados `parkinsons_updrs.data` (separado por vírgulas) deve estar na mesma pasta do script principal. O nosso script já faz a leitura e a quebra (Treino/Validação/Teste) automaticamente.
+O projeto acompanha um script automatizado para baixar o dataset e alocá-lo na pasta correta (`data/`). Basta executar:
+```bash
+python src/download_data.py
+```
 
 **5. Inicie o servidor do MLflow:**
 Para conseguir visualizar os painéis e gráficos, inicie o servidor do MLflow em um terminal separado:
@@ -84,5 +87,5 @@ python train_pytorch.py
 
 ## 🎥 Evidências e Entregáveis
 
-- **Vídeo de Apresentação:** [Insira o link do vídeo aqui]
-- **Repositório GitHub:** [Insira o link do repositório aqui]
+- **Vídeo de Apresentação:** [\[Insira o link do vídeo aqui\]](https://youtu.be/nqSrawmzS1A)
+- **Repositório GitHub:** [\[Insira o link do repositório aqui\]](https://github.com/Brunosno/projeto-mlflow-parkinsons)
